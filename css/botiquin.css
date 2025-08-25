@@ -1,0 +1,72 @@
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(#6249BA, rgba(239, 239, 240, 0.8));
+            color: #434242;
+        }
+        
+        .pro-card {
+            background-color: #ffffff; /* Fondo blanco para las tarjetas */
+            border: none; /* Sin borde por defecto */
+            border-radius: 1rem; /* Esquinas redondeadas */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transiciones suaves */
+        }
+        .pro-card:hover {
+            transform: translateY(-5px); /* Pequeño levantamiento al pasar el mouse */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Sombra más pronunciada */
+        }
+        .pro-card .card-body {
+            padding: 1.5rem; /* Relleno interno */
+        }
+        .card-icon {
+            font-size: 2.5rem; /* Tamaño grande para los iconos emoji */
+            margin-bottom: 1rem; /* Espacio debajo del icono */
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.3rem; /* Tamaño de título */
+            font-weight: 600; /* Negrita */
+            color: #212529; /* Color de título más oscuro */
+            margin-bottom: 0.75rem;
+        }
+        .card-text {
+            color: #6c757d; /* Color de texto secundario */
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .btn-link {
+            color: #0d6efd; /* Color del enlace predeterminado de Bootstrap */
+            text-decoration: none; /* Sin subrayado por defecto */
+            font-weight: 500;
+        }
+        .btn-link:hover {
+            text-decoration: underline; /* Subrayado al pasar el mouse */
+        }
+        .highlight {
+            background: linear-gradient(135deg, #f99d9a, #D94E4A); /* Degradado para tarjetas destacadas */
+            color: #ffffff; /* Texto blanco para las destacadas */
+        }
+        .highlight .card-title,
+        .highlight .card-text {
+            color: #ffffff; /* Texto blanco */
+        }
+        .highlight .btn-link {
+            color: #ffffff !important; /* Enlace blanco para las destacadas */
+        }
+        .list-unstyled li {
+            margin-bottom: 0.5rem; /* Espacio entre elementos de la lista */
+            color: #495057; /* Color de texto para listas */
+            font-size: 0.9rem;
+        }
+        .highlight .list-unstyled li {
+            color: #ffffff; /* Color de texto blanco para listas destacadas */
+        }
+        .lista-1 li::before {
+            content: ""; /* No mostrar el viñeta por defecto */
+        }
+        .card-icon {
+        font-size: 2.8rem;
+        }
+        .card-title {
+        font-weight: bold;
+        }

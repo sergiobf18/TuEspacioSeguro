@@ -1,0 +1,58 @@
+/* Botón personalizado para Estudiantes */
+.btn-custom-est {
+    background-color: #0FA866;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    transition: background 0.2s;
+}
+.btn-custom-est:hover {
+    background-color: #13663c;
+    color: #fff;
+}
+/* Fondo general igual que en profesores */
+.btn-custom-pro {
+    background-color: #231b95;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    transition: background 0.2s;
+}
+.btn-custom-pro:hover {
+    background-color: #1f38f1;
+    color: #fff;
+}
+body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(#6249BA, rgba(239, 239, 240, 0.8));
+            color: #434242;
+    }
+
+
+
+/* Secciones hero del index */
+.hero {
+    background: rgba(112, 41, 211, 0.95); /* azul profesores */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botones del index */
+.btn-custom {
+    background-color: #231b95;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #241588;
+}

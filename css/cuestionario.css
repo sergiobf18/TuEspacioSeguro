@@ -1,0 +1,133 @@
+
+body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(#6249BA, rgba(239, 239, 240, 0.8));
+            color: #434242;
+        }
+
+/* Espacio superior e inferior para el contenedor principal de la sección */
+.container.mt-5 {
+    padding-top: 20px; /* Espacio superior para compensar la navbar fija si existe */
+    padding-bottom: 40px;
+}
+
+/* Estilos para el nuevo card de encabezado "Qué es un botiquín de primeros auxilios psicológicos?" */
+.d-flex.justify-content-center.mb-4 .card {
+    border: none;
+    border-radius: 1rem; /* Esquinas redondeadas */
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15); /* Sombra suave y prominente */
+    background: linear-gradient(135deg, #667eea, #44bac9); /* Degradado morado del .highlight */
+    color: #ffffff; /* Texto blanco */
+    padding: 1.5rem; /* Relleno interno */
+}
+
+.d-flex.justify-content-center.mb-4 .card-title {
+    font-size: 1.5rem; /* Tamaño de título grande */
+    font-weight: 600; /* Negrita */
+    color: #ffffff; /* Color de título blanco */
+    margin-bottom: 0.75rem;
+}
+
+.d-flex.justify-content-center.mb-4 .card-text {
+    font-size: 1.1rem; /* Tamaño de texto legible */
+    color: #ffffff; /* Color de texto blanco */
+    line-height: 1.5;
+}
+
+/* Estilos para las tarjetas de cuestionario (las dos de abajo) */
+.card.shadow {
+    border: none;
+    border-radius: 1rem; /* Esquinas más redondeadas */
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important; /* Sombra más pronunciada */
+    text-align: center;
+    display: flex; /* Usar flexbox para alinear contenido */
+    flex-direction: column;
+    justify-content: space-between; /* Espacia el contenido verticalmente */
+    height: 100%; /* Ocupa la altura completa de la columna */
+    padding: 1.5rem; /* Aumenta el padding interno */
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Ligero degradado para el fondo de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.card.shadow:hover {
+    transform: translateY(-8px); /* Efecto de levantamiento */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2) !important; /* Sombra más intensa al pasar el mouse */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.preguntaimg {
+    max-width: 120px; /* Tamaño más controlado para las imágenes de los iconos */
+    height: auto;
+    margin-bottom: 1rem; /* Espacio debajo de la imagen */
+    border-radius: 50%; /* Hacerlas circulares */
+    border: 4px solid #6249BA; /* Borde del color de la navbar (morado) */
+    box-shadow: 0 0 0 5px rgba(98, 73, 186, 0.2); /* Sombra alrededor del borde */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card.shadow:hover .preguntaimg {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el mouse sobre la tarjeta */
+    border-color: #44bac9; /* Cambia el color del borde al hacer hover (turquesa) */
+}
+
+/* Estilos para el texto de la pregunta en las tarjetas */
+.card-text {
+    font-size: 1.15rem; /* Tamaño de fuente más grande */
+    font-weight: 500; /* Seminegrita */
+    color: #495057; /* Color de texto más oscuro */
+    margin-bottom: 1.5rem; /* Espacio debajo del texto */
+    line-height: 1.4;
+}
+
+/* Estilos para el botón personalizado */
+.btn-custom {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 9999px; /* Borde completamente redondeado (forma de píldora) */
+    background: linear-gradient(45deg, #6249BA, #44bac9); /* Degradado morado a turquesa */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.btn-custom:hover {
+    transform: translateY(-3px); /* Ligeramente levantado al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    background: linear-gradient(45deg, #44bac9, #6249BA); /* Invierte el degradado al pasar el mouse */
+}
+
+/* Responsive adjustments for cards */
+@media (max-width: 767.98px) {
+    .col-md-4 {
+        margin-bottom: 1.5rem; /* Espacio entre las tarjetas en móviles */
+    }
+}
+
+/* Definición de la clase highlight que se usará para el degradado morado */
+.highlight {
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Degradado para tarjetas destacadas */
+    color: #ffffff; /* Texto blanco para las destacadas */
+}
+
+/* Asegura que el texto y enlaces dentro de .highlight sean blancos */
+.highlight .card-title,
+.highlight .card-text {
+    color: #ffffff; /* Texto blanco */
+}
+.highlight .btn-link { /* Por si hay un btn-link dentro de un highlight, aunque no es el caso actual */
+    color: #ffffff !important;
+}

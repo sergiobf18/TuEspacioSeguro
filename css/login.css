@@ -1,0 +1,21 @@
+body {
+    background-image: url(../img/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-header {
+        background-color: #382763 !important; /* Más oscuro que la cabecera */
+        color: #fff !important;
+        border-radius: 18px 18px 0 0;
+        text-align: center;
+}
+.btn-custom {
+    background-color: #6249BA;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
