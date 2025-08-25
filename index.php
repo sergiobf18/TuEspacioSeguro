@@ -1,5 +1,15 @@
+<?php
+session_start();
+
+// Si no hay sesión iniciada, redirige al login
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <?php  include ("cabecera.php"); ?>
 <link rel="stylesheet" href="css/index.css">
+
 
 
 
