@@ -1,9 +1,4 @@
-<?php
-session_start();
-if( isset($_SESSION['usuario'])!="sergio"){
-    header("location:index.php");
-}
-?>
+
 
 <!DOCTYPE html>
 <html lang="es">
