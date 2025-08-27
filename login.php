@@ -1,20 +1,22 @@
 <?php 
 session_start();
-if($_POST){
-    if( ($_POST['usuario']=="colegio") && ( $_POST['contraseña']=="12345") ){
-        
-        $_SESSION['usuario']="colegio";
-        
-        header("location:index.php");
-        echo "<script> alert ('Sesión Iniciada' ); </script>";
 
-    }else{
-        echo "<script> alert ('usuario o contraseña incorrecta' ); </script>";
+if ($_POST) {
+    if ($_POST['usuario'] === "colegio" && $_POST['contraseña'] === "12345") {
+        
+        // Guardamos el usuario en sesión
+        $_SESSION['usuario'] = "colegio";
+        
+        // Redirigimos al index
+        header("Location: index.php");
+        exit(); // 🔴 Importante: detener ejecución después de redirigir
+
+    } else {
+        echo "<script>alert('Usuario o contraseña incorrectos');</script>";
     }
-
 }
-
 ?>
+
 
 <!doctype html>
 <html lang="en">

@@ -7,6 +7,7 @@ if (!isset($_SESSION['usuario'])) {
     exit();
 }
 ?>
+
 <?php  include ("cabecera.php"); ?>
 <link rel="stylesheet" href="css/index.css">
 
